@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>ZenTrails - Tours</title>
+  <link rel="stylesheet" href="index.css" >
+  <link rel="stylesheet" href="bootstrap.min.css" >
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="all.min.css">
+</head>
+<style>
+  .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+.card {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+</style>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/Logo maker project.png" alt="ZenTrails Logo" style="height: 65px; width: auto;" class=" logo me-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Slider -->
+  <div id="tourCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('img/tourslider2.jpg'); height: 90vh; background-size: cover; background-position: center;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1>Explore Handpicked Tours</h1>
+          <p>Adventure, culture, history – find the perfect Indian tour</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('img/tourslider1.jpeg'); height: 90vh; background-size: cover; background-position: center;">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+          <h1>Discover the Real India</h1>
+          <p>From the peaks of Himalayas to the sands of Rajasthan</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Tours List Section -->
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Tour Packages</h2>
+    <div class="row g-4">
+
+      <!-- Golden Triangle Tour -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/goldentriangle.jpg" class="card-img-top" alt="Golden Triangle Tour">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Golden Triangle</h5>
+            <p class="card-text">Delhi, Agra & Jaipur – 5 Days</p>
+            <p class="text-primary fw-bold">₹14,999 per person</p>
+            <a href="golden-triangle.html" class="btn btn-primary mt-auto">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kerala Backwaters -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/kerala-tour.jpg" class="card-img-top" alt="Kerala Tour">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Kerala Backwaters</h5>
+              <p class="card-text">Alleppey & Munnar – 4 Days</p>
+              <p class="text-primary fw-bold">₹14,999 per person</p>
+              <a href="kerala.html" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rajasthan Tour -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/rajasthan.jpg" class="card-img-top" alt="Rajasthan Tour">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Royal Rajasthan</h5>
+              <p class="card-text">Jaipur, Jodhpur & Udaipur – 6 Days</p>
+              <p class="text-primary fw-bold">₹21,999 per person</p>
+              <a href="rajasthan.html" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- North East India -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/northeasttour.webp" class="card-img-top" alt="North East Tour">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mystic North East</h5>
+              <p class="card-text">Meghalaya & Sikkim – 5 Days</p>
+              <p class="text-primary fw-bold">₹18,499 per person</p>
+              <a href="north-east.html" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Himachal Tour -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/himachal.webp" class="card-img-top" alt="Himachal Tour">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Himachal Wonders</h5>
+              <p class="card-text">Manali & Shimla – 5 Days</p>
+              <p class="text-primary fw-bold">₹17,999 per person</p>
+              <a href="himachal.html" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gujarat Heritage -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/gujarat.jpg" class="card-img-top" alt="Gujarat Tour">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gujarat Heritage Trail</h5>
+              <p class="card-text">Rann of Kutch & Somnath – 5 Days</p>
+              <p class="text-primary fw-bold">₹15,999 per person</p>
+              <a href="gujarat.html" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+
+      <!-- Ladakh Adventure -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/ladakh2.jpg" class="card-img-top" alt="Ladakh Tour">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Ladakh Adventure</h5>
+            <p class="card-text">Leh, Pangong, Nubra – 6 Days</p>
+            <p class="text-primary fw-bold">₹22,999 per person</p>
+            <a href="ladakh.html" class="btn btn-primary mt-auto">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/andaman2.jpg" class="card-img-top" alt="Andaman Tour">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Andaman Islands</h5>
+            <p class="card-text">Port Blair, Havelock – 5 Days</p>
+            <p class="text-primary fw-bold">₹19,999 per person</p>
+            <a href="andaman.html" class="btn btn-primary mt-auto">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9  -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/mp.jpg" class="card-img-top" alt="Madhya Pradesh Tour">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Madhya Pradesh Heritage</h5>
+              <p class="card-text">Khajuraho & Sanchi – 5 Days</p>
+              <p class="text-primary fw-bold">₹16,999 per person</p>
+              <a href="madhya-pradesh.html" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Tour Types Section -->
+  <section class="section text-center">
+    <div class="container">
+      <h2 class="section-title mb-5">Tour Types</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="feature-box">
+            <div class="feature-icon mb-2">🌄</div>
+            <h6>Adventure Tours</h6>
+            <p>Trekking, rafting, safaris for thrill seekers.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-box">
+            <div class="feature-icon mb-2">🛕</div>
+            <h6>Cultural Tours</h6>
+            <p>Festivals, food trails, and heritage walks.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-box">
+            <div class="feature-icon mb-2">💆</div>
+            <h6>Wellness Retreats</h6>
+            <p> Yoga, Ayurveda, and spa getaways.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-box">
+            <div class="feature-icon mb-2">👨‍👩‍👧‍👦</div>
+            <h6>Family Tours</h6>
+            <p>Fun-packed tours for the whole family.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Logo and Description -->
+      <div class="col-md-4 mb-4">
+        <img src="img/Logo maker project.png" alt="ZenTrails Logo" style="width: 150px;" class="mb-2">
+        <p class="small">Explore India’s beauty with personalized tours, peaceful getaways, and unforgettable journeys.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="destinations.html" class="text-light text-decoration-none">Destinations</a></li>
+          <li><a href="tours.html" class="text-light text-decoration-none">Tours</a></li>
+          <li><a href="booking.html" class="text-light text-decoration-none">Book Now</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Contact</h5>
+        <p class="small mb-1"><i class="fa-solid fa-envelope me-2"></i> info@zentrails.in</p>
+        <p class="small mb-3"><i class="fa-solid fa-phone me-2"></i> +91-98765-43210</p>
+        <h5 class="mb-2">Follow Us</h5>
+        <a href="#" class="text-light me-3"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-light"><i class="fa-brands fa-youtube fa-lg"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-light">
+    <div class="text-center small">
+      &copy; 2025 ZenTrails. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

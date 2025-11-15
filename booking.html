@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZenTrails - Booking Inquiry</title>
+  <link href="index.css" rel="stylesheet" />
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="all.min.css">
+  <style>
+
+    .hero-section {
+        height: 90vh;
+        overflow: hidden;
+      }
+
+      .hero-img {
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(65%); /* Optional: darken image for better text contrast */
+      }
+
+      .hero-text h1, .hero-text p {
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* Better readability */
+      }
+
+    .form-section {
+      background-color: #e6f2f2;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #006666;
+      border-left: 5px solid #00b3b3;
+      padding-left: 12px;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/Logo maker project.png" alt="ZenTrails Logo" style="height: 65px; width: auto;" class=" logo me-2">
+      <!-- <span class="fw-bold text-dark">ZenTrails</span> -->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+<section class="hero-section position-relative">
+  <img src="img/booking.jpg" alt="Booking Background" class="w-100 hero-img">
+  <div class="hero-text position-absolute top-50 start-50 translate-middle text-center text-white">
+    <h1 class="display-5">Booking Inquiry</h1>
+    <p>We’ll help you plan your next great adventure.</p>
+  </div>
+</section>
+
+
+  <!-- Booking Form -->
+  <section class="container my-5">
+    <h2 class="h4 fw-semibold mb-4">Booking Details</h2>
+    <form class="form-section">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your name" required />
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="your@email.com" required />
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="+91-XXXXXXXXXX" required />
+        </div>
+        <div class="col-md-6">
+          <label for="destination" class="form-label">Select Tour</label>
+          <select class="form-select" id="destination" required>
+            <option value="">-- Select a Tour Package --</option>
+            <option>Golden Triangle</option>
+            <option>Kerala Backwaters</option>
+            <option>Royal Rajasthan</option>
+            <option>Mystic North East</option>
+            <option>Himachal Wonders</option>
+            <option>Gujarat Heritage Trail</option>
+            <option>Ladakh Adventure</option>
+            <option>Andaman Escape</option>
+            <option>Madhya Pradesh Explorer</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="travelDate" class="form-label">Preferred Travel Date</label>
+          <input type="date" class="form-control" id="travelDate" required />
+        </div>
+        <div class="col-md-6">
+          <label for="people" class="form-label">Number of Travelers</label>
+          <input type="number" class="form-control" id="people" min="1" required />
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Additional Notes (Optional)</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Any preferences or requests..."></textarea>
+        </div>
+        <div class="col-12 text-center mt-4">
+          <button type="submit" class="btn btn-primary px-5">Submit Inquiry</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+   <!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Logo and Description -->
+      <div class="col-md-4 mb-4">
+        <img src="img/Logo maker project.png" alt="ZenTrails Logo" style="width: 150px;" class="mb-2">
+        <p class="small">Explore India’s beauty with personalized tours, peaceful getaways, and unforgettable journeys.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="destinations.html" class="text-light text-decoration-none">Destinations</a></li>
+          <li><a href="tours.html" class="text-light text-decoration-none">Tours</a></li>
+          <li><a href="booking.html" class="text-light text-decoration-none">Book Now</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">Contact</h5>
+        <p class="small mb-1"><i class="fa-solid fa-envelope me-2"></i> info@zentrails.in</p>
+        <p class="small mb-3"><i class="fa-solid fa-phone me-2"></i> +91-98765-43210</p>
+        <h5 class="mb-2">Follow Us</h5>
+        <a href="#" class="text-light me-3"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-light me-3"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-light"><i class="fa-brands fa-youtube fa-lg"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-light">
+    <div class="text-center small">
+      &copy; 2025 ZenTrails. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
